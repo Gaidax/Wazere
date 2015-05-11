@@ -2,7 +2,7 @@
 //  APPSCropViewController.m
 //  Wazere
 //
-//  Created by Alexey Kalentyev on 12/8/14.
+//  Created by Gaidax on 12/8/14.
 //  Copyright (c) 2014 iOS Developer. All rights reserved.
 //
 
