@@ -1,0 +1,124 @@
+//
+//  PrefixHeader.pch
+//  Wazere
+//
+//  Created by Bogdan Bilonog on 9/1/14.
+//  Copyright (c) 2014 iOS Developer. All rights reserved.
+//
+
+#ifndef Wazere_PrefixHeader_pch
+#define Wazere_PrefixHeader_pch
+#endif
+
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <MapKit/MapKit.h>
+
+    #import "APPSConstants.h"
+
+// Pods
+    #import <ReactiveCocoa/ReactiveCocoa.h>
+    #import <ReactiveCocoa/RACEXTScope.h>
+    #import <AFNetworking/AFNetworking.h>
+    #import <AFNetworkActivityLogger/AFNetworkActivityLogger.h>
+    #import <AFNetworking/UIKit+AFNetworking.h>
+    #import <GPUImage/GPUImage.h>
+    #import <FacebookSDK/FacebookSDK.h>
+    #import "UIImageView+WebCache.h"
+    #import <Groot/Groot.h>
+    #import "CoreData+MagicalRecord.h"
+    #import <STTweetLabel/STTweetLabel.h>
+
+// Custom clases
+    #import "APPSAppDelegate.h"
+    #import "APPSBaseModel.h"
+    #import "APPSCurrentUser.h"
+    #import "APPSUtilityFactory.h"
+    #import "APPSAuthConstants.h"
+    #import "NSString+Validation.h"
+    #import "APPSCurrentUserManager.h"
+    #import "APPSConstants.h"
+    #import "APPSSpinnerView.h"
+//Fonts
+    #import "Fonts/FontsHeader.h"
+
+
+    #define IS_OS_8_OR_LATER ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)
+
+    #define IS_WIDESCREEN_IOS7 ( fabs( ( double )[ [ UIScreen mainScreen ] bounds ].size.height - ( double )568 ) < DBL_EPSILON )
+    #define IS_WIDESCREEN_IOS8 ( fabs( ( double )[ [ UIScreen mainScreen ] nativeBounds ].size.height - ( double )1136 ) < DBL_EPSILON )
+    #define IS_WIDESCREEN      ( ( [ [ UIScreen mainScreen ] respondsToSelector: @selector( nativeBounds ) ] ) ? IS_WIDESCREEN_IOS8 : IS_WIDESCREEN_IOS7 )
+
+    #define IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+    #define SCREEN_WIDTH CGRectGetWidth([UIScreen mainScreen].bounds)
+    #define SCREEN_HEIGHT CGRectGetHeight([UIScreen mainScreen].bounds)
+    #define SCREEN_MAX_LENGTH (MAX(SCREEN_WIDTH, SCREEN_HEIGHT))
+
+    #define IS_IPHONE_4_OR_LESS (IS_IPHONE && SCREEN_MAX_LENGTH < 568.0)
+    #define IS_IPHONE_5 (IS_IPHONE && SCREEN_MAX_LENGTH == 568.0)
+    #define IS_IPHONE_6 (IS_IPHONE && SCREEN_MAX_LENGTH == 667.0)
+    #define IS_IPHONE_6P (IS_IPHONE && SCREEN_MAX_LENGTH == 736.0)
+
+//configuration
+
+//#define STAGING 1
+
+#ifdef STAGING
+  //staging
+  #define BASE_URL_STRING @"http://104.131.37.234:8080"
+
+#else
+  //production
+  #define BASE_URL_STRING @"http://104.131.37.234:81"
+#endif
+
+  //api version
+  static NSString *const kAPIVersion = @"/api/v1";
+
+  //iTunes link
+  static NSString *const kITunesLink = @"http://itunes.apple.com/";
+
+//end configuration
+
+//Fonts
+    #define UIColorFromRGB(r, g, b, a) [UIColor colorWithRed:r / 255.0 green:g / 255.0 blue:b / 255.0 alpha:a]
+
+    #define SHADOW_OFFSET CGSizeMake(3, 3)
+
+    #define IMAGE_WITH_NAME(n) [UIImage imageNamed:n]
+    static NSString *const kWebAPIErrorKey = @"com.alamofire.serialization.response.error.response";
+    static NSString *const kWebAPIErrorResponseKey = @"WebAPIErrorResponseKey";
+
+    static NSString *const kMemoryWarningNotificationName = @"MemoryWarningNotificationName";
+    static NSString *const kBackgorundURLSessionIdentifier = @"APPSWazereBackgoroundSessionIdentifier";
+
+    static NSString *const kSessionTokenKey = @"Session-Token";
+    static NSString *const CurrentUserIdKey = @"Current-User-Id";
+    static NSString *const kDeviceTokenKey = @"device_token";
+    static NSString *const kIsFirstLoadKey = @"APPSIsFirstLoad";
+
+    static CGFloat const shadowRadius = 0.0;
+    static CGFloat const shadowOpacity = 0.14;
+
+    static CGFloat const barBattonItemFontSize = 17;
+
+    #define kMainBackgroundColor UIColorFromRGB(183, 45, 47, 1.0)
+
+    static NSString * const backArrowImageName = @"back";
+    static NSString * const backArrowClickedImageName = @"back_click";
+
+    static NSInteger const homeIndex = 0;
+    static NSInteger const cameraIndex = 2;
+    static NSInteger const profileIndex = 4;
+    static NSInteger const newsFeedIndex = 3;
+    static NSInteger const mapIndex = 1;
+    static NSString *const kStoryboardName = @"Main";
+    static NSString *const kTabBarControllerStoryboardID = @"APPSTabBarViewController";
+    static NSString *const kPolicyAddress = @"http://104.131.37.234:8080/policy";
+    static NSString *const kTermsAddress = @"http://104.131.37.234:8080/terms";
+    static NSString *const kPolicyHeader = @"Privacy Policy";
+    static NSString *const kTermsHeader = @"Terms of Service";
+
+#endif

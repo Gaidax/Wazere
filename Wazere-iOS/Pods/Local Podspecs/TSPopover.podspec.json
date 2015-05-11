@@ -1,0 +1,19 @@
+{
+  "name": "TSPopover",
+  "version": "0.1.0",
+  "summary": "UIPopover like UI for iPhone",
+  "description": "                    UIPopover like UI (with ActionSheet) for iPhone - there is lot's of work still to do.\n",
+  "homepage": "https://github.com/heach/TSPopover",
+  "license": "MIT",
+  "authors": {
+    "Pawel 'Kender' Maczewski": "kender@codingslut.com"
+  },
+  "platforms": {
+    "ios": null
+  },
+  "source": {
+    "git": "https://github.com/heach/TSPopover",
+    "tag": "0.1.0"
+  },
+  "source_files": "TSPopover"
+}

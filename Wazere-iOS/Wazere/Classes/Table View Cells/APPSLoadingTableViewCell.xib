@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Champagne &amp; Limousines Bold.ttf">
+            <string>Champagne&amp;Limousines-Bold</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="40" id="KGk-i7-Jjw" customClass="APPSLoadingTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tyv-5i-Ulv">
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="42" id="pVg-1f-8Bf"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Champagne&amp;Limousines-Bold" family="Champagne &amp; Limousines" pointSize="18"/>
+                        <color key="textColor" red="0.30588235289999999" green="0.29803921570000003" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="ZV8-ws-RIa">
+                        <rect key="frame" x="150" y="8" width="20" height="20"/>
+                        <color key="color" red="0.63529411764705879" green="0.14117647058823529" blue="0.24705882352941178" alpha="1" colorSpace="calibratedRGB"/>
+                    </activityIndicatorView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Tyv-5i-Ulv" firstAttribute="centerX" secondItem="ZV8-ws-RIa" secondAttribute="centerX" constant="1.5" id="8iW-ty-omO"/>
+                    <constraint firstItem="Tyv-5i-Ulv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="6" id="jPK-D7-TwV"/>
+                    <constraint firstItem="Tyv-5i-Ulv" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="1.5" id="mO1-ov-vdN"/>
+                    <constraint firstItem="ZV8-ws-RIa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="mhP-vF-d2v"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="activityIndicator" destination="ZV8-ws-RIa" id="7sS-AO-9Pm"/>
+                <outlet property="errorLabel" destination="Tyv-5i-Ulv" id="o5p-S1-VI3"/>
+            </connections>
+            <point key="canvasLocation" x="210" y="339"/>
+        </tableViewCell>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

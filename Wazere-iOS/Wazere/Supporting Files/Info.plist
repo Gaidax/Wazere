@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.WazereInc.Wazere</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.1</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string></string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>wazere</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string></string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb189492631221386</string>
+			</array>
+		</dict>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>41</string>
+	<key>Fabric</key>
+	<dict>
+		<key>APIKey</key>
+		<string>47c2d638eaf82fe89aaf0ac7394b8f987ec444fc</string>
+		<key>Kits</key>
+		<array>
+			<dict>
+				<key>KitInfo</key>
+				<dict/>
+				<key>KitName</key>
+				<string>Crashlytics</string>
+			</dict>
+		</array>
+	</dict>
+	<key>FacebookAppID</key>
+	<string>189492631221386</string>
+	<key>FacebookDisplayName</key>
+	<string>Wazere</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>WAZERE needs your location to help you discover nearby photos you'll love.</string>
+	<key>NSLocationUsageDescription</key>
+	<string>WAZERE needs your location to help you discover nearby photos you'll love.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>WAZERE needs your location to help you discover nearby photos you'll love.</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>GOTHIC.TTF</string>
+		<string>GOTHICB.TTF</string>
+		<string>GOTHICI.TTF</string>
+		<string>GOTHICBI.TTF</string>
+		<string>Champagne &amp; Limousines Bold Italic.ttf</string>
+		<string>Champagne &amp; Limousines Bold.ttf</string>
+		<string>Champagne &amp; Limousines Italic.ttf</string>
+		<string>Champagne &amp; Limousines.ttf</string>
+		<string>INTRO.otf</string>
+		<string>Voltaire.otf</string>
+	</array>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>remote-notification</string>
+	</array>
+	<key>UILaunchStoryboardName</key>
+	<string>Launch Screen</string>
+	<key>UIMainStoryboardFile</key>
+	<string>Main</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>location-services</string>
+	</array>
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleLightContent</string>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
+</dict>
+</plist>

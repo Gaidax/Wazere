@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="APPSProfileEmptyView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="384"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="5xG-Oc-yXK">
+                    <rect key="frame" x="85" y="10" width="150" height="150"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="Pou-MC-poP"/>
+                        <constraint firstAttribute="height" constant="150" id="mUT-fC-uYY"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="4u0-qy-irN">
+                    <rect key="frame" x="20" y="165" width="280" height="23"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <color key="textColor" red="0.74901960779999999" green="0.1843137255" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="d2R-D4-qU4">
+                    <rect key="frame" x="20" y="321" width="280" height="23"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <color key="textColor" red="0.74901960779999999" green="0.1843137255" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tips_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="FaL-xX-hEr">
+                    <rect key="frame" x="149" y="349" width="22" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="22" id="Ba3-FL-xCK"/>
+                        <constraint firstAttribute="height" constant="25" id="C5w-Zg-5gd"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.94509803921568625" green="0.94509803921568625" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="d2R-D4-qU4" secondAttribute="trailing" constant="20" id="BpJ-Gm-CSu"/>
+                <constraint firstAttribute="bottom" secondItem="FaL-xX-hEr" secondAttribute="bottom" constant="10" id="Gxz-MK-i69"/>
+                <constraint firstAttribute="trailing" secondItem="4u0-qy-irN" secondAttribute="trailing" constant="20" id="MH9-sf-d5t"/>
+                <constraint firstAttribute="centerX" secondItem="5xG-Oc-yXK" secondAttribute="centerX" id="WDX-2Q-52P"/>
+                <constraint firstItem="d2R-D4-qU4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="Xdo-aT-CrX"/>
+                <constraint firstItem="FaL-xX-hEr" firstAttribute="top" secondItem="d2R-D4-qU4" secondAttribute="bottom" constant="5" id="dET-rb-iAY"/>
+                <constraint firstItem="4u0-qy-irN" firstAttribute="top" secondItem="5xG-Oc-yXK" secondAttribute="bottom" constant="5" id="eIh-L0-aCQ"/>
+                <constraint firstAttribute="centerX" secondItem="FaL-xX-hEr" secondAttribute="centerX" id="spM-cB-xNH"/>
+                <constraint firstItem="5xG-Oc-yXK" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="wNz-Hh-NvB"/>
+                <constraint firstItem="4u0-qy-irN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="wy2-PT-lze"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bottomImageView" destination="FaL-xX-hEr" id="Ngu-I0-1Fq"/>
+                <outlet property="messageLabel" destination="d2R-D4-qU4" id="UPW-uv-L3B"/>
+                <outlet property="titleLabel" destination="4u0-qy-irN" id="uKQ-vO-26T"/>
+                <outlet property="topImageView" destination="5xG-Oc-yXK" id="kof-bp-Nfh"/>
+                <outlet property="topImageViewHeight" destination="mUT-fC-uYY" id="wvk-Vf-46p"/>
+            </connections>
+            <point key="canvasLocation" x="348" y="254"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="photo_placeholder" width="98" height="98"/>
+        <image name="tips_arrow" width="22" height="24"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

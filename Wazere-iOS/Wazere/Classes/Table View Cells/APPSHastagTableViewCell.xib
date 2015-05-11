@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Champagne &amp; Limousines Bold.ttf">
+            <string>Champagne&amp;Limousines-Bold</string>
+            <string>Champagne&amp;Limousines-Bold</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="APPSHastagTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E3c-fA-CYm" userLabel="Count Label">
+                        <rect key="frame" x="248" y="12" width="42" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="42" id="j5G-wh-9nP"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Champagne&amp;Limousines-Bold" family="Champagne &amp; Limousines" pointSize="14"/>
+                        <color key="textColor" red="0.30588235289999999" green="0.29803921570000003" blue="0.29803921570000003" alpha="0.5" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SjK-MF-p2g" userLabel="Hashtag Label">
+                        <rect key="frame" x="28" y="12" width="42" height="19"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="42" id="OcW-fg-9YU"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Champagne&amp;Limousines-Bold" family="Champagne &amp; Limousines" pointSize="18"/>
+                        <color key="textColor" red="0.30588235289999999" green="0.29803921570000003" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="SjK-MF-p2g" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Iki-KY-mUL"/>
+                    <constraint firstItem="SjK-MF-p2g" firstAttribute="baseline" secondItem="E3c-fA-CYm" secondAttribute="baseline" id="Vh2-kw-XgD"/>
+                    <constraint firstItem="SjK-MF-p2g" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="YYU-RE-ChO"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="E3c-fA-CYm" secondAttribute="trailing" constant="22" id="dCs-Te-8nB"/>
+                    <constraint firstItem="SjK-MF-p2g" firstAttribute="top" secondItem="E3c-fA-CYm" secondAttribute="top" id="dPU-Wb-EWa"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="hashtagLabel" destination="SjK-MF-p2g" id="bST-Fw-3Xc"/>
+                <outlet property="postsCountLabel" destination="E3c-fA-CYm" id="M26-7X-mbd"/>
+            </connections>
+            <point key="canvasLocation" x="487" y="358"/>
+        </tableViewCell>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

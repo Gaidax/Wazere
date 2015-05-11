@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewsFeedEmptyCell" rowHeight="130" id="KGk-i7-Jjw" customClass="APPSNewsFeedEmptyTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="220"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="ZMn-hs-rPL">
+                        <rect key="frame" x="28" y="89" width="264" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="117" id="lrc-ev-47I"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="yIt-hF-dGR"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.74901960779999999" green="0.1843137255" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u7I-vD-7bv">
+                        <rect key="frame" x="38" y="140" width="244" height="47"/>
+                        <color key="backgroundColor" red="0.74901960779999999" green="0.1843137255" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="u7I-vD-7bv" secondAttribute="height" multiplier="244:47" id="qVa-68-lAJ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <state key="normal" title="Find Facebook Friends to Follow">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="_layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="_layer.cornerRadius">
+                                <integer key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="facebookButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="UHY-In-5Y7"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="j8P-1y-gEB">
+                        <rect key="frame" x="28" y="38" width="264" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="bhl-oq-zXi"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="79" id="wd6-wp-0Ft"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <color key="textColor" red="0.74901960779999999" green="0.1843137255" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="centerX" secondItem="j8P-1y-gEB" secondAttribute="centerX" id="CJT-0j-Tzf"/>
+                    <constraint firstItem="j8P-1y-gEB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="30" id="Icb-G7-qRb"/>
+                    <constraint firstItem="j8P-1y-gEB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="JDt-LP-bef"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="u7I-vD-7bv" secondAttribute="trailing" constant="30" id="JIT-gq-mEs"/>
+                    <constraint firstItem="u7I-vD-7bv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="30" id="LnW-GA-306"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="j8P-1y-gEB" secondAttribute="trailing" constant="20" id="NBu-sg-FXm"/>
+                    <constraint firstItem="ZMn-hs-rPL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="POT-vh-Mcj"/>
+                    <constraint firstItem="ZMn-hs-rPL" firstAttribute="top" secondItem="j8P-1y-gEB" secondAttribute="bottom" constant="30" id="euh-z4-HlO"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ZMn-hs-rPL" secondAttribute="trailing" constant="20" id="tYo-bP-UwD"/>
+                    <constraint firstItem="u7I-vD-7bv" firstAttribute="top" secondItem="ZMn-hs-rPL" secondAttribute="bottom" constant="30" id="yzP-xK-42Y"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="facebookFriendsButton" destination="u7I-vD-7bv" id="qAB-Y4-yj9"/>
+                <outlet property="messageLabel" destination="ZMn-hs-rPL" id="1Zh-TD-Uwn"/>
+                <outlet property="titleLabel" destination="j8P-1y-gEB" id="XNL-fN-EE6"/>
+            </connections>
+            <point key="canvasLocation" x="393" y="225"/>
+        </tableViewCell>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

@@ -1,0 +1,6 @@
+#include "Pods-STTweetLabel.xcconfig"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/STTweetLabel" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworkActivityLogger" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/Bolts" "${PODS_ROOT}/Headers/Public/CocoaSecurity" "${PODS_ROOT}/Headers/Public/FXPageControl" "${PODS_ROOT}/Headers/Public/Facebook-iOS-SDK" "${PODS_ROOT}/Headers/Public/Facebook-iOS-SDK/FacebookSDK" "${PODS_ROOT}/Headers/Public/GPUImage" "${PODS_ROOT}/Headers/Public/Groot" "${PODS_ROOT}/Headers/Public/JSONModel" "${PODS_ROOT}/Headers/Public/MagicalRecord" "${PODS_ROOT}/Headers/Public/Onboard" "${PODS_ROOT}/Headers/Public/PEPhotoCropEditor" "${PODS_ROOT}/Headers/Public/ReactiveCocoa" "${PODS_ROOT}/Headers/Public/ReactiveCocoa/ReactiveCocoa" "${PODS_ROOT}/Headers/Public/STTweetLabel" "${PODS_ROOT}/Headers/Public/STTwitter" "${PODS_ROOT}/Headers/Public/SWTableViewCell" "${PODS_ROOT}/Headers/Public/TSPopover" "${PODS_ROOT}/Headers/Public/iRate" "${PODS_ROOT}/Headers/Public/kingpin"
+OTHER_LDFLAGS = -ObjC
+PODS_ROOT = ${SRCROOT}
+SKIP_INSTALL = YES

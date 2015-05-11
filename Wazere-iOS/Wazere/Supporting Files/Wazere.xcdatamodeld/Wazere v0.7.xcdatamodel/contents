@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="0.1" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6751" systemVersion="14C1514" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="APPSChannel" representedClassName="APPSChannel" syncable="YES">
+        <attribute name="name" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="APPSCurrentUser" representedClassName="APPSCurrentUser" syncable="YES">
+        <attribute name="avatar" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="user.avatar_url"/>
+            </userInfo>
+        </attribute>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="user.email"/>
+            </userInfo>
+        </attribute>
+        <attribute name="facebookName" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="user.facebook_name"/>
+            </userInfo>
+        </attribute>
+        <attribute name="followersCount" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="user.follower_counter"/>
+            </userInfo>
+        </attribute>
+        <attribute name="followingCount" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="user.followed_counter"/>
+            </userInfo>
+        </attribute>
+        <attribute name="likesCount" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="user.total_likes_count"/>
+            </userInfo>
+        </attribute>
+        <attribute name="newUser" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="user.new_user"/>
+            </userInfo>
+        </attribute>
+        <attribute name="photosCount" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="user.photos_count"/>
+            </userInfo>
+        </attribute>
+        <attribute name="showFacebookFriends" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="userDescription" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="user.description"/>
+            </userInfo>
+        </attribute>
+        <attribute name="userId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="user.id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="username" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="user.username"/>
+            </userInfo>
+        </attribute>
+        <attribute name="viewsCount" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="user.total_views_count"/>
+            </userInfo>
+        </attribute>
+        <attribute name="website" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="user.website"/>
+            </userInfo>
+        </attribute>
+        <userInfo>
+            <entry key="identityAttribute" value="userId"/>
+        </userInfo>
+    </entity>
+    <entity name="APPSUser" representedClassName="APPSUser" syncable="YES">
+        <attribute name="name" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="APPSChannel" positionX="196" positionY="81" width="128" height="58"/>
+        <element name="APPSCurrentUser" positionX="-63" positionY="-27" width="128" height="253"/>
+        <element name="APPSUser" positionX="198" positionY="-9" width="128" height="58"/>
+    </elements>
+</model>

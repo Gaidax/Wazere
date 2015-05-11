@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="0.1" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6244" systemVersion="13F34" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="APPSCurrentUser" representedClassName="APPSCurrentUser" syncable="YES">
+        <attribute name="avatar" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="user.avatar_url"/>
+            </userInfo>
+        </attribute>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="user.email"/>
+            </userInfo>
+        </attribute>
+        <attribute name="followersCount" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="user.follower_counter"/>
+            </userInfo>
+        </attribute>
+        <attribute name="followingCount" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="user.followed_counter"/>
+            </userInfo>
+        </attribute>
+        <attribute name="newUser" optional="YES" attributeType="Boolean" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="user.new_user"/>
+            </userInfo>
+        </attribute>
+        <attribute name="photosCount" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="user.photos_count"/>
+            </userInfo>
+        </attribute>
+        <attribute name="userDescription" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="user.description"/>
+            </userInfo>
+        </attribute>
+        <attribute name="userId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="user.id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="username" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="user.username"/>
+            </userInfo>
+        </attribute>
+        <attribute name="website" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="user.website"/>
+            </userInfo>
+        </attribute>
+        <userInfo>
+            <entry key="identityAttribute" value="userId"/>
+        </userInfo>
+    </entity>
+    <elements>
+        <element name="APPSCurrentUser" positionX="-63" positionY="-27" width="128" height="195"/>
+    </elements>
+</model>

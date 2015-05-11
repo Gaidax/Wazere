@@ -1,0 +1,25 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '7.0'
+inhibit_all_warnings!
+
+
+pod 'AFNetworking', '~> 2.4.1'
+pod 'AFNetworkActivityLogger', '~> 2.0.3'
+pod 'JSONModel', '~> 1.0.1'
+pod 'ReactiveCocoa', '~> 2.3.1'
+pod 'MagicalRecord', '~> 2.2'
+pod 'Groot', '~> 0.1'
+pod 'Facebook-iOS-SDK', '~> 3.17.0'
+pod 'CocoaSecurity', '~> 1.2.4'
+pod 'GPUImage', '~> 0.1.6'
+pod 'kingpin', '~> 0.2.beta'
+pod 'SWTableViewCell', '~> 0.3.4'
+pod 'STTweetLabel'
+pod 'STTwitter'
+pod 'iRate', '~> 1.11'
+pod 'PEPhotoCropEditor', :git => 'https://github.com/heach/PEPhotoCropEditor'
+pod 'FXPageControl', '~> 1.4'
+pod 'Onboard'
+
+link_with 'Wazere', 'WazereTests'

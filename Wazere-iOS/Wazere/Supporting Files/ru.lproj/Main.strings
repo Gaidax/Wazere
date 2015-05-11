@@ -1,0 +1,18 @@
+
+/* Class = "IBUITabBarItem"; title = "Item 2"; ObjectID = "HWE-4A-Rac"; */
+"HWE-4A-Rac.title" = "Item 2";
+
+/* Class = "IBUITextField"; placeholder = "Enter email"; ObjectID = "IkD-m9-bWE"; */
+"IkD-m9-bWE.placeholder" = "Enter email";
+
+/* Class = "IBUIButton"; normalTitle = "Button"; ObjectID = "SVb-SU-2WT"; */
+"SVb-SU-2WT.normalTitle" = "Button";
+
+/* Class = "IBUIButton"; normalTitle = "Button"; ObjectID = "YmL-8f-LFe"; */
+"YmL-8f-LFe.normalTitle" = "Button";
+
+/* Class = "IBUIButton"; normalTitle = "Button"; ObjectID = "iQ2-kh-jJh"; */
+"iQ2-kh-jJh.normalTitle" = "Button";
+
+/* Class = "IBUITabBarItem"; title = "Item 1"; ObjectID = "sIP-P2-hwV"; */
+"sIP-P2-hwV.title" = "Item 1";
